@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6100BCD4"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn_resta"
+        android:layout_width="371dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:onClick="restar"
+        android:text="RESTAR"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_suma" />
+
+    <Button
+        android:id="@+id/btn_multiplica"
+        android:layout_width="371dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:onClick="multiplicar"
+        android:text="MULTIPLICAR"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_resta" />
+
+    <Button
+        android:id="@+id/btn_divide"
+        android:layout_width="371dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:onClick="dividir"
+        android:text="DIVIDIR"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_multiplica" />
+
+    <EditText
+        android:id="@+id/et_num2"
+        android:layout_width="369dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Segundo número"
+        android:inputType="number"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.523"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_num1" />
+
+    <EditText
+        android:id="@+id/et_num1"
+        android:layout_width="365dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="168dp"
+        android:ems="10"
+        android:hint="Primer número"
+        android:inputType="number"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_suma"
+        android:layout_width="371dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:onClick="sumar"
+        android:text="SUMAR"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_num2" />
+
+    <TextView
+        android:id="@+id/tv_resultado"
+        android:layout_width="364dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="32dp"
+        android:hint="Resultado"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_divide" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="95dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="28dp"
+        android:background="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@drawable/sin_t_tulo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
